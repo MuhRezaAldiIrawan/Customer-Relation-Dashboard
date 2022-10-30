@@ -1,0 +1,207 @@
+<% layout('layout') -%> 
+<style>
+.client {
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 20px;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #ccc; 
+}
+.hide {
+    display: none;
+}
+</style>
+<div class="main-panel">
+    <div class="container">
+        <div class="panel-header bg-primary-gradient">
+            <div class="page-inner py-5">
+                <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
+                    <div>
+                        <h2 class="text-white pb-2 fw-bold">Dashboard</h2>
+                        <h5 class="text-white op-7 mb-2">Selamat Datang <%= emails %> </h5>
+                    </div>
+                    <div class="ml-md-auto py-2 py-md-0">
+                        <button class="btn btn-secondary btn-round" data-toggle="modal" data-target="#exampleModal">Add Account WA</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-inner mt--5">
+            <div class="row mt--2">
+                <div class="col-md-12">
+                    <div class="card full-height">
+                        <div class="card-body">
+                            <div class="card-title text-center">Scan Barcode Whats Up Now</div>
+                            <div class="d-flex flex-wrap justify-content-around pb-2 pt-4">
+                                <div class="client-container">
+                                    <div class="client hide">
+                                        <h3 class="title text-center" id="delete"></h3>
+                                        <p class="description text-center"></p>
+                                        <img src="./images/wa.png" width="300px" height="300px" alt="Connecting..." id="qrcode">
+                                        <div style="overflow-x: scroll;height:100px;">
+                                            <h3>Information:</h3>
+                                            <ul class="logs"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container-fluid">
+            <nav class="pull-left">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Help
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Licenses
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright ml-auto">
+                2018, made with <i class="fa fa-heart heart text-danger"></i> by <a href="#">ThemeKita</a>
+            </div>				
+        </div>
+    </footer>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">Form Add Account Whats Up</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                <label for="exampleInputEmail1">Sender</label>
+                <input type="hidden" id="userid" value="<%= emails %>">
+                <input type="text" id="client-id" class="form-control" >
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Description</label>
+                  <textarea class="form-control" id="client-description"></textarea>
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary add-client-btn">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.min.js" integrity="sha512-/WwtKR6NnHomLo0O4w9QKc1INTPEJs7ko6u2aBTA1paPldhPl8LtXsi7a35iEZ69+9P5dcgVNESG8hrP4Y2t3w==" crossorigin="anonymous"></script> -->
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+     $(function() {
+        var txt = $("input#client-id");
+        var func = function() {
+            txt.val(txt.val().replace(/\s/g, ''));
+            txt.val(txt.val().replace(/[^a-zA-Z0-9@]+/, 'a'));
+        }
+         txt.keyup(func).blur(func);
+    });
+
+    function hapus(id){
+        var id = $(id).data("id");
+        alert(id)
+        var socket = io();
+        socket.emit('delete-session',{
+            id: id
+        });
+        setTimeout(function(){
+            location.reload();
+        },3000);
+    }
+
+   $(document).ready(function() {
+        var socket = io();
+        $('.add-client-btn').click(function() {
+            var clientId = $('#client-id').val();
+            var userid = $('#userid').val();
+            var clientDescription = $('#client-description').val();
+            var template = $('.client').first().clone()
+                                        .removeClass('hide')
+                                        .addClass(clientId);
+            // template.find('.title').html(clientId);
+            template.find('.title').html(clientId+`<br> <button class="btn btn-danger" data-id="${clientId}" onclick="hapus(this)">Hapus</button>`);
+            template.find('.description').html(clientDescription);
+            $('.client-container').append(template);
+            socket.emit('create-session', {
+                id: clientId,
+                userid:userid,
+                description: clientDescription
+            });
+            $('#exampleModal').modal('hide');
+            $('#client-id').val('');
+            $('#client-description').val();
+        });
+
+        socket.on('init', function(data) {
+            $('.client-container .client').not(':first').remove();
+            for (var i = 0; i < data.length; i++) {
+                var session = data[i];
+                var clientId = session.id;
+                var clientDescription = session.description;
+                var template = $('.client').first().clone().removeClass('hide').addClass(clientId);
+                template.find('.title').html(clientId+`<br> <button class="btn btn-danger btn-sm" data-id="${clientId}" onclick="hapus(this)"><i class="nav-icon fab fa-whatsapp icon"></i> Keluar</button>`);
+                template.find('.description').html(clientDescription);
+                $('.client-container').append(template);
+                $(".logs").html("");
+                if (session.ready) {
+                    $(".logs").html("");
+                    $(`.client.${session.id} .logs`).append($('<li>').text('Whatsapp is ready!'));
+                    $(`.client.${session.id} #qrcode`).attr('src', '/images/cek.png');
+                } else {
+                    $(".logs").html("");
+                    $(`.client.${session.id} .logs`).append($('<li>').text('Connecting...'));
+                }
+            }
+        });
+
+        socket.on('remove-session', function(id) {
+            $(`.client.${id}`).remove();
+        });
+
+        socket.on('message', function(data) {
+            $(`.client.${data.id} .logs`).append($('<li>').text(data.text));
+        });
+
+        socket.on('qr', function(data) {
+            $(`.client.${data.id} #qrcode`).attr('src', data.src);
+            $(`.client.${data.id} #qrcode`).show();
+        });
+
+        socket.on('ready', function(data) {
+            // $(`.client.${data.id} #qrcode`).hide();
+            $(`.client.${data.id} #qrcode`).attr('src', './images/cek.png');
+        });
+
+        socket.on('authenticated', function(data) {
+            // $(`.client.${data.id} #qrcode`).hide();
+            
+            $(`.client.${data.id} #qrcode`).attr('src', './images/cek.png');
+        });
+    });
+</script>

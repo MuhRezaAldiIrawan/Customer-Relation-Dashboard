@@ -1,0 +1,253 @@
+<% layout('default') -%> 
+<div class="page-inner mt--5 mb-2">
+  <div class="row mt--2">
+    <div class="col-md-12">
+      <div class="card full-height">
+          <div class="card-body">
+              <div class="">
+                  <% if(success !== ""){ %>
+                      <% success.forEach((item)=>{ %>
+                          <div class="alert alert-success" role="alert">
+                              <strong>Well done!</strong> <%- item%>
+                          </div>
+                      <% })%>
+                  <% } %>
+                  <% if(errors !== ""){ %>
+                      <% errors.forEach((item)=>{ %>
+                          <div class="alert alert-danger" role="alert">
+                              <strong>Well done!</strong> <%- item%>
+                          </div>
+                      <% })%>
+                  <% } %>
+
+                  <div class="client-container">
+                      <div class="client hide">
+                          <div style="overflow-x: scroll;height:20px;" id="datalogs">
+                              <center>
+                                  <ul class="logs" style=""></ul>
+                              </center>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+  
+                <div class="col-xxl">
+                    <div class="card mb-4" id="formhide2">
+                      <div class="card-header d-flex align-items-center justify-content-between">
+                        <h5 class="mb-0">Broadcast Message</h5>
+                        <small class="text-muted float-end">Only Text Message</small>
+                      </div>
+                      <div class="card-body">
+                        <form method="POST" id="myForm" action="/send-broadcastwa">
+                          <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Sender</label>
+                            <div class="col-sm-10">
+                              <div class="input-group input-group-merge">
+                                <span id="basic-icon-default-fullname2" class="input-group-text"><i class="bx bx-user"></i></span>
+                                <select class="form-select" id="sender" name="sender" > 
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <label class="col-sm-2 form-label" for="basic-icon-default-phone">Phone Number</label>
+                            <div class="col-sm-10">
+                              <div class="input-group input-group-merge">
+                                <span id="basic-icon-default-phone2" class="input-group-text"><i class="bx bx-phone"></i></span>
+                                <input 
+                                  type="text"
+                                  id="number" 
+                                  name="number" 
+                                  class="form-control phone-mask"
+                                  placeholder="082165561175,082165561175,etc"
+                                  aria-label="658 799 8941"
+                                  aria-describedby="basic-icon-default-phone2"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <label class="col-sm-2 form-label" for="basic-icon-default-message">Message</label>
+                            <div class="col-sm-10">
+                              <div class="input-group input-group-merge">
+                                <span id="basic-icon-default-message2" class="input-group-text"
+                                  ><i class="bx bx-comment"></i
+                                ></span>
+                                <textarea
+                                  name="message" 
+                                  id="message"
+                                  class="form-control"
+                                  placeholder="Hi, Do you have a moment to talk Joe?"
+                                  aria-label="Hi, Do you have a moment to talk Joe?"
+                                  aria-describedby="basic-icon-default-message2"
+                                ></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row justify-content-end">
+                            <div class="col-sm-10">
+                              <button type="submit" class="btn btn-primary" id="btnSave">Send</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="col-xxl">
+                  <div class="card mb-4" id="formhide">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="mb-0">Broadcast  With Excel</h5>
+                      <small class="text-muted float-end">With Excel File</small>
+                    </div>
+                    <div class="card-body">
+                      <form method="POST" id="myForm" action="/send-broadcast-excel" enctype="multipart/form-data">
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Sender</label>
+                          <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-fullname2" class="input-group-text"><i class="bx bx-user"></i></span>
+                              <select class="form-select" id="sender2" name="sender" > 
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 form-label" for="basic-icon-default-phone">Phone Number In Excel</label>
+                          <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-phone2" class="input-group-text"><i class="bx bx-phone"></i></span>
+                              <input 
+                                type="file"
+                                id="number" 
+                                name="filename"
+                                class="form-control phone-mask"
+                                placeholder="082165561175,082165561175,etc"
+                                aria-label="658 799 8941"
+                                aria-describedby="basic-icon-default-phone2"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 form-label" for="basic-icon-default-message">Message</label>
+                          <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-message2" class="input-group-text"
+                                ><i class="bx bx-comment"></i
+                              ></span>
+                              <textarea
+                                name="message" 
+                                id="message"
+                                class="form-control"
+                                placeholder="Hi, Do you have a moment to talk Joe?"
+                                aria-label="Hi, Do you have a moment to talk Joe?"
+                                aria-describedby="basic-icon-default-message2"
+                              ></textarea>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row justify-content-end">
+                          <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary" id="btnSave">Send</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+              </div>
+
+
+                <script src="/socket.io/socket.io.js"></script>
+                <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+                <script>
+                       $(document).ready(function() {
+                            var socket = io();
+                            var myDate = new Date().toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, "$1");
+                            socket.on('broadcastwa', function(data) {
+                                console.log(data);
+                                setTimeout(() => $(`#formhide`).hide(), 1000);
+                                setTimeout(() => $(`#formhide2`).hide(), 1000);
+                                setTimeout(() => $(`.alert`).hide(), 2000);
+                                setTimeout(() => $("#datalogs").css("height",300),5000);
+                                if(data.type==='success'){
+                                    $(`.logs`).append($('<li style="display:block;color:green;">').html(data.id+' - '+data.text+' | '+myDate+' <i class="fa fa-check" aria-hidden="true"></i>'));
+                                }else if(data.type==='warning'){
+                                    $(`.logs`).append($('<li style="display:block;color:red;">').html(data.id+' - '+data.text+' | '+myDate+' <i class="fa fa-times-circle" aria-hidden="true"></i>'));
+                                }else{
+                                    $(`.logs`).append($('<li style="display:block;color:red;">').html(data.id+' - '+data.text+' | '+myDate+' <i class="fa fa-whatsapp" aria-hidden="true"></i>'));
+                                }
+                            });
+                        });
+                
+                    $.ajax({
+                    type: 'GET',
+                    url: '/bm/listSender',
+                    dataType: 'json',
+                    success: function (d) {
+                      var newOptions = {};
+                      newOptions['-- Pilih --'] = '';
+                      for (var index = 0; index < d.data.length; index++) {
+                        var option = d.data[index].id;
+                        var value = d.data[index].id;
+                        newOptions[option] = value;
+                      }
+                      var $el = $("#sender");
+                      // $el.empty(); // remove old options
+                      $.each(newOptions, function(key,value) {
+                      $el.append($("<option></option>")
+                        .attr("value", value).text(key));
+                      });
+                      // console.log(JSON.stringify(newOptions));
+                    },error:function(){ 
+                      // console.log(d);
+                    }
+                  });
+                    $.ajax({
+                    type: 'GET',
+                    url: '/bm/listSender',
+                    dataType: 'json',
+                    success: function (d) {
+                      var newOptions = {};
+                      newOptions['-- Pilih --'] = '';
+                      for (var index = 0; index < d.data.length; index++) {
+                        var option = d.data[index].id;
+                        var value = d.data[index].id;
+                        newOptions[option] = value;
+                      }
+                      var $el = $("#sender2");
+                      // $el.empty(); // remove old options
+                      $.each(newOptions, function(key,value) {
+                      $el.append($("<option></option>")
+                        .attr("value", value).text(key));
+                      });
+                      // console.log(JSON.stringify(newOptions));
+                    },error:function(){ 
+                      // console.log(d);
+                    }
+                  });
+                     $(function() {
+                        var txt = $("input#client-id");
+                        var func = function() {
+                            txt.val(txt.val().replace(/\s/g, ''));
+                            txt.val(txt.val().replace(/[^a-zA-Z0-9@]+/, 'a'));
+                        }
+                         txt.keyup(func).blur(func);
+                    });
+                
+                    function hapus(id){
+                        var id = $(id).data("id");
+                        alert(id)
+                        var socket = io();
+                        socket.emit('delete-session',{
+                            id: id
+                        });
+                    }
+                
+                
+                </script>

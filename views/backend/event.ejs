@@ -1,0 +1,134 @@
+<% layout('default') -%> 
+
+<div class="row">
+    <div class="col-lg-12 mb-4 order-0">
+      <div class="card">
+        <div class="d-flex align-items-end row">
+          <div class="col-sm-7">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Welcome Developers Llen</h5>
+              <p class="mb-4">
+                Lakukan Yang terbaik, Kerja Ibadah dan Apresiasi Pelanggan!!!!!
+              </p>    
+            </div>
+          </div>
+          <div class="col-sm-5 text-end text-sm-left">
+            <div class="card-body pb-0 px-0 px-md-4">
+              <img
+                src="../assets/img/illustrations/man-with-laptop-light.png"
+                height="140"
+                alt="View Badge User"
+                data-app-dark-img="illustrations/man-with-laptop-dark.png"
+                data-app-light-img="illustrations/man-with-laptop-light.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="d-flex justify-content-end mb-4">
+    <div class="ml-md-auto py-2 py-md-0">
+       <button class="btn btn-primary btn-round" id="btnAdd" >
+           <span class="tf-icons bx bx-user-plus"></span>&nbsp;
+           Add Users
+       </button>
+     </div>
+   </div>
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <div id="calendar" class="app-fullcalendar"></div>
+            </div>
+        </div>      
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Add Account Users</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form id="myForm" action="/event/add-event" method="POST">
+              <div class="form-group">
+              <label for="exampleInputEmail1">Event Name</label>
+              <input type="hidden" name="id" >
+              <input type="text" class="form-control" name="nama" placeholder="" required>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleInputEmail1">Organizer</label>
+                <input type="text" class="form-control" name="organizer" placeholder="" required>
+              </div>
+
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Start</label>
+                  <input type="date" class="form-control" name="start" placeholder="" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">End</label>
+                <input type="date" class="form-control" name="end" placeholder="" required>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Place</label>
+                <input type="text" class="form-control" name="place" placeholder="" required>
+              </div>
+          </form>
+          <div class="form-group">
+              <button type="button" id="btnSave" class="btn btn-primary">Save changes</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(document).ready(function() {
+      $('#calendar').fullCalendar({
+        header: {
+          left: 'prev,next today,month',
+          right: 'title',
+        },
+
+        themeSystem: 'bootstrap4',
+        navLinks: true, // can click day/week names to navigate views
+        editable: true,
+        eventLimit: true, // allow "more" link when too many events
+             events: [
+          {
+            title: 'Long Event',
+            start: '2022-10-10',
+            end: '2022-10-10',
+            backgroundColor:'green'
+          }
+        ],
+        eventClick: function(calEvent, jsEvent, view, resourceObj) {
+            swal({
+              title: calEvent.title,
+              text: "Start From : "+moment(calEvent.start).format("MMMM Do YYYY, h:mm a"),
+              icon: "success",
+            });
+        }
+      });
+      $(".fc-right .fc-button-group").append(
+            '<div class="input-group datetimepicker"><input type="text" class="form-control fc-datepicker" placeholder="YYYY-MM-DD" style="padding: 0;width: 0;border: none;margin: 0;"></div>');
+          $(".fc-datepicker").datepicker({
+            dateFormat: 'yy-mm-dd',
+            showOn: "button",
+            buttonText: '<span class="input-group-addon"><i class="fas fa-calendar-alt"></i></span>'
+          });
+    });
+</script>

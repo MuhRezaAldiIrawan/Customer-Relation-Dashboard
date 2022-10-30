@@ -1,0 +1,394 @@
+<% layout('layout') -%> 
+<div class="main-panel">
+    <div class="container">
+        <div class="panel-header bg-primary-gradient">
+            <div class="page-inner py-5">
+                <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
+                    <div>
+                        <h2 class="text-white pb-2 fw-bold">Dashboard</h2>
+                        <h5 class="text-white op-7 mb-2">Premium Bootstrap 4 Admin Dashboard</h5>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="page-inner mt--5">
+            <div class="row mt--2">
+              
+                <div class="col-md-12">
+                    <div class="card full-height">
+                        <div class="card-body">
+                            <div class="">
+                                <% if(success !== ""){ %>
+                                    <% success.forEach((item)=>{ %>
+                                        <div class="alert alert-success" role="alert">
+                                            <strong>Well done!</strong> <%- item%>
+                                        </div>
+                                    <% })%>
+                                <% } %>
+                                <% if(errors !== ""){ %>
+                                    <% errors.forEach((item)=>{ %>
+                                        <div class="alert alert-danger" role="alert">
+                                            <strong>Well done!</strong> <%- item%>
+                                        </div>
+                                    <% })%>
+                                <% } %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card full-height">
+                        <div class="card-body">
+                            <div class="card-title">Form Send Whats Up Text Only</div>
+                            <div class="">
+                             
+                                <form method="POST" id="myForm" action="/send-message">
+                                    
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Pengirim</label>
+                                        <select class="form-control" id="sender" name="sender" > 
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1">Number Handphone</label>
+                                      <input type="number" class="form-control" id="number" name="number" placeholder="082165561175" >
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputPassword1">Text Message</label>
+                                      <textarea class="form-control" name="message" id="message" ></textarea>
+                                    </div>
+                                    <div class="form-check">
+                                        <button id="btnSave" class="btn btn-primary">Kirim</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-md-6">
+                    <div class="card full-height">
+                        <div class="card-body">
+                            <div class="card-title">Form Send Whats Up Media</div>
+                            <div class="">
+                                <form method="POST" id="myForm2" action="/send-media" enctype="multipart/form-data">
+                                    
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Sender</label>
+                                        <select class="form-control" id="sender2" name="sender">
+                                            
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1">Number Handphone</label>
+                                      <input type="number" class="form-control" id="number" name="number" placeholder="082165561175" >
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputPassword1">Text Message</label>
+                                      <textarea class="form-control" name="caption" id="caption" ></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">File</label>
+                                        <input type="file" class="form-control" id="file" name="file" >
+                                    </div>
+                                    <div class="form-check">
+                                        <button id="btnSave2" class="btn btn-primary">Kirim</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card full-height">
+                        <div class="card-body">
+                            <div class="card-title">Form Send Whats Up Media URL</div>
+                            <div class="">
+                                <form method="POST" id="myForm2" action="/send-media-url" enctype="multipart/form-data">
+                                    
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Sender</label>
+                                        <select class="form-control" id="sender3" name="sender">
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputEmail1">Number Handphone</label>
+                                      <input type="number" class="form-control" id="number" name="number" placeholder="082165561175" >
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputPassword1">Text Message</label>
+                                      <textarea class="form-control" name="caption" id="caption" ></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">File URL</label>
+                                        <input type="text" class="form-control" id="file" name="file" >
+                                    </div>
+                                    <div class="form-check">
+                                        <button id="btnSave2" class="btn btn-primary">Kirim</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card full-height">
+                        <div class="card-body">
+                            <div class="card-title">Form Send Whats Up Group Media URL</div>
+                            <div class="">
+                                <form method="POST" id="myForm2" action="/send-group-message-media-url" enctype="multipart/form-data">
+                                    
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Sender</label>
+                                        <select class="form-control" id="sender4" name="sender">
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Name Group</label>
+                                        <select class="form-control" id="listgroup" name="id">
+                                            <option value="">Pilih</option>
+                                        </select>
+                                    </div>
+                                 
+                                    <div class="form-group">
+                                      <label for="exampleInputPassword1">Text Message</label>
+                                      <textarea class="form-control" name="caption" id="caption" ></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">File URL</label>
+                                        <input type="text" class="form-control" id="file" name="file" >
+                                    </div>
+                                    <div class="form-check">
+                                        <button id="btnSave2" class="btn btn-primary">Kirim</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container-fluid">
+            <nav class="pull-left">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Help
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Licenses
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright ml-auto">
+                2018, made with <i class="fa fa-heart heart text-danger"></i> by <a href="#">ThemeKita</a>
+            </div>				
+        </div>
+    </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+   $.ajax({
+		type: 'GET',
+		url: '/sendwa/listSender',
+		dataType: 'json',
+		success: function (d) {
+			var newOptions = {};
+			newOptions['-- Pilih --'] = '';
+			for (var index = 0; index < d.data.length; index++) {
+				var option = d.data[index].id;
+				var value = d.data[index].id;
+				newOptions[option] = value;
+			}
+			var $el = $("#sender");
+			// $el.empty(); // remove old options
+			$.each(newOptions, function(key,value) {
+			$el.append($("<option></option>")
+				.attr("value", value).text(key));
+			});
+			// console.log(JSON.stringify(newOptions));
+		},error:function(){ 
+			// console.log(d);
+		}
+	});
+    $.ajax({
+		type: 'GET',
+		url: '/sendwa/listSender',
+		dataType: 'json',
+		success: function (d) {
+			var newOptions = {};
+			newOptions['-- Pilih --'] = '';
+			for (var index = 0; index < d.data.length; index++) {
+				var option = d.data[index].id;
+				var value = d.data[index].id;
+				newOptions[option] = value;
+			}
+			var $el = $("#sender2");
+			// $el.empty(); // remove old options
+			$.each(newOptions, function(key,value) {
+			$el.append($("<option></option>")
+				.attr("value", value).text(key));
+			});
+			// console.log(JSON.stringify(newOptions));
+		},error:function(){ 
+			// console.log(d);
+		}
+	});
+    $.ajax({
+		type: 'GET',
+		url: '/sendwa/listSender',
+		dataType: 'json',
+		success: function (d) {
+			var newOptions = {};
+			newOptions['-- Pilih --'] = '';
+			for (var index = 0; index < d.data.length; index++) {
+				var option = d.data[index].id;
+				var value = d.data[index].id;
+				newOptions[option] = value;
+			}
+			var $el = $("#sender3");
+			// $el.empty(); // remove old options
+			$.each(newOptions, function(key,value) {
+			$el.append($("<option></option>")
+				.attr("value", value).text(key));
+			});
+			// console.log(JSON.stringify(newOptions));
+		},error:function(){ 
+			// console.log(d);
+		}
+	});
+    $.ajax({
+		type: 'GET',
+		url: '/sendwa/listSender',
+		dataType: 'json',
+		success: function (d) {
+			var newOptions = {};
+			newOptions['-- Pilih --'] = '';
+			for (var index = 0; index < d.data.length; index++) {
+				var option = d.data[index].id;
+				var value = d.data[index].id;
+				newOptions[option] = value;
+			}
+			var $el = $("#sender4");
+			// $el.empty(); // remove old options
+			$.each(newOptions, function(key,value) {
+			$el.append($("<option></option>")
+				.attr("value", value).text(key));
+			});
+			// console.log(JSON.stringify(newOptions));
+		},error:function(){ 
+			// console.log(d);
+		}
+	});
+
+    $.ajax({
+		type: 'GET',
+		url: '/listgroups/listGroups',
+		dataType: 'json',
+		success: function (d) {
+			var newOptions = {};
+			newOptions['-- Pilih --'] = '';
+			for (var index = 0; index < d.data.length; index++) {
+				var option = d.data[index].nama_group;
+				var value = d.data[index].id_group;
+				newOptions[option] = value;
+			}
+			var $el = $("#listgroup");
+			// $el.empty(); // remove old options
+			$.each(newOptions, function(key,value) {
+			$el.append($("<option></option>")
+				.attr("value", value).text(key));
+			});
+			// console.log(JSON.stringify(newOptions));
+		},error:function(){ 
+			// console.log(d);
+		}
+	});
+
+
+    // $('#btnSave').click(function () {
+    //     var url = $('#myForm').attr('action');
+    //     var formData = new FormData();
+    //     var formData = {
+    //         number: $("#number").val(),
+    //         message:$("#message").val(),
+    //         sender:$("#sender").val(),
+    //     }
+    //     console.log(formData);
+    //     $('#btnSave').html('<i class="fa fa-save"></i>&nbsp; Simpan <img width="30" heigth="30" src="">').attr('disabled', 'disabled');
+    //     $.ajax({
+    //         type : "POST",
+    //         contentType : "application/json",
+    //         url : url,
+    //         data : JSON.stringify(formData),
+    //         dataType : 'json',
+    //         success : function(response){
+    //             console.log(response.status);
+    //             if(response.status==true){
+    //                 $('#btnSave').prop('disabled', false);
+    //                 Swal.fire('Success!','Succes Send Message','success');
+    //             }else if(response.status==201){
+    //                 $('#btnSave').prop('disabled', false);
+    //                 Swal.fire('Warning!',response.message,'warning');
+    //             }else if(response.status==202){
+    //                 $('#btnSave').prop('disabled', false);
+    //                 const array1 = response.message;
+    //                 Swal.fire('Warning!','Field is required','warning');
+    //             }
+    //         },
+    //         error: function(){
+    //             $('#btnSave').prop('disabled', false);
+    //             Swal.fire('Failed!','Failed Send Message.','error');
+                
+    //         }
+    //     });
+    // });
+  
+  
+    // $('#btnSave2').click(function () {
+    //     var url = $('#myForm2').attr('action');
+    //     var formData = new FormData();
+
+    //     formData.append('file', $('input[id="file"]')[0].files[0]);
+    //     var formData = {
+    //         number: $("#number").val(),
+    //         caption:$("#caption").val(),
+    //         sender:$("#sender2").val()
+    //     }
+    //     console.log(formData);
+    //     $('#btnSave').html('<i class="fa fa-save"></i>&nbsp; Simpan <img width="30" heigth="30" src="">').attr('disabled', 'disabled');
+    //     $.ajax({
+    //         type : "POST",
+    //         contentType : "application/json",
+    //         url : url,
+    //         data : JSON.stringify(formData),
+    //         dataType : 'json',
+    //         success : function(response){
+    //             console.log(response.status);
+    //             if(response.status==true){
+    //                 $('#btnSave').prop('disabled', false);
+    //                 Swal.fire('Success!','Succes Send Message','success');
+    //             }
+    //         },
+    //         error: function(){
+    //             $('#btnSave').prop('disabled', false);
+    //             Swal.fire('Failed!','Failed Send Message.','error');
+                
+    //         }
+    //     });
+    // });
+  
+
+</script>

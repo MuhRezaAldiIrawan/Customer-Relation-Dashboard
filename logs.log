@@ -1,0 +1,2968 @@
+[2022-10-14T15:42:16.379] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-15T11:57:32.604] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-15T12:27:51.236] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-15T13:51:48.029] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-15T14:00:01.817] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-15T14:21:34.158] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-15T14:37:34.951] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-15T14:58:59.418] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-15T18:43:44.778] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-15T20:34:25.458] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-15T21:08:25.432] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-15T21:09:58.981] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-15T21:48:13.144] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-19T17:09:51.271] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-19T17:15:35.545] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-19T18:36:18.965] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-19T18:46:15.580] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-19T18:46:48.582] [DEBUG] default - Create session: reza
+[2022-10-19T18:47:07.917] [INFO] default - message { id: 'reza', text: 'QR Code received, scan please!' }
+[2022-10-19T18:47:34.557] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-19T18:47:34.794] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-19T18:48:00.151] [DEBUG] default - url:/send-media message: success send wa 6282393169811@c.us
+[2022-10-19T18:48:00.386] [DEBUG] default - url:/send-media message:Insert Send Wa Media Successfully 
+[2022-10-20T23:05:30.692] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-20T23:09:09.193] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-20T23:13:07.402] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-20T23:18:31.591] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-20T23:19:49.626] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-20T23:19:50.412] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-20T23:20:17.773] [DEBUG] default - url:/send-media message: success send wa 6282393169811@c.us
+[2022-10-20T23:20:18.906] [DEBUG] default - url:/send-media message:Insert Send Wa Media Successfully 
+[2022-10-20T23:21:58.935] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-20T23:30:16.338] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0CCC0A48011540F29',
+      _serialized: 'true_6282271468484@c.us_3EB0CCC0A48011540F29'
+    },
+    body: 'Testing',
+    type: 'chat',
+    t: 1666279816,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    id: '3EB0CCC0A48011540F29',
+    _serialized: 'true_6282271468484@c.us_3EB0CCC0A48011540F29'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'Testing',
+  type: 'chat',
+  timestamp: 1666279816,
+  from: '6287756420551@c.us',
+  to: '6282271468484@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-20T23:30:19.072] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-20T23:30:30.174] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0B4EBCA8FB1223F07',
+      self: 'out',
+      _serialized: 'true_6287756420551@c.us_3EB0B4EBCA8FB1223F07_out'
+    },
+    body: 'Testing',
+    type: 'chat',
+    t: 1666279830,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    id: '3EB0B4EBCA8FB1223F07',
+    self: 'out',
+    _serialized: 'true_6287756420551@c.us_3EB0B4EBCA8FB1223F07_out'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'Testing',
+  type: 'chat',
+  timestamp: 1666279830,
+  from: '6287756420551@c.us',
+  to: '6287756420551@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-20T23:30:43.297] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0763CBA58F76B4875',
+      _serialized: 'true_6282271468484@c.us_3EB0763CBA58F76B4875'
+    },
+    body: 'qwertyuiop',
+    type: 'chat',
+    t: 1666279843,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    id: '3EB0763CBA58F76B4875',
+    _serialized: 'true_6282271468484@c.us_3EB0763CBA58F76B4875'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'qwertyuiop',
+  type: 'chat',
+  timestamp: 1666279843,
+  from: '6287756420551@c.us',
+  to: '6282271468484@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-20T23:30:45.199] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0A76D43634F2BB035',
+      _serialized: 'true_6285964252885@c.us_3EB0A76D43634F2BB035'
+    },
+    body: 'Testing',
+    type: 'chat',
+    t: 1666279845,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6285964252885',
+      _serialized: '6285964252885@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6285964252885',
+      _serialized: '6285964252885@c.us'
+    },
+    id: '3EB0A76D43634F2BB035',
+    _serialized: 'true_6285964252885@c.us_3EB0A76D43634F2BB035'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'Testing',
+  type: 'chat',
+  timestamp: 1666279845,
+  from: '6287756420551@c.us',
+  to: '6285964252885@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-20T23:30:58.045] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB09618740438789D0D',
+      self: 'out',
+      _serialized: 'true_6287756420551@c.us_3EB09618740438789D0D_out'
+    },
+    body: 'qwertyuiop',
+    type: 'chat',
+    t: 1666279858,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    id: '3EB09618740438789D0D',
+    self: 'out',
+    _serialized: 'true_6287756420551@c.us_3EB09618740438789D0D_out'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'qwertyuiop',
+  type: 'chat',
+  timestamp: 1666279858,
+  from: '6287756420551@c.us',
+  to: '6287756420551@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-20T23:31:12.825] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0FA4C0C9632C3CABB',
+      _serialized: 'true_6285964252885@c.us_3EB0FA4C0C9632C3CABB'
+    },
+    body: 'qwertyuiop',
+    type: 'chat',
+    t: 1666279872,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6285964252885',
+      _serialized: '6285964252885@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6285964252885',
+      _serialized: '6285964252885@c.us'
+    },
+    id: '3EB0FA4C0C9632C3CABB',
+    _serialized: 'true_6285964252885@c.us_3EB0FA4C0C9632C3CABB'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'qwertyuiop',
+  type: 'chat',
+  timestamp: 1666279872,
+  from: '6287756420551@c.us',
+  to: '6285964252885@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T13:44:11.027] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T14:10:20.917] [INFO] default - errors [ 'Invalid value', 'Invalid value' ]
+[2022-10-22T14:10:21.274] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-22T14:10:21.277] [FATAL] default - ERRORError [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2022-10-22T14:10:23.339] [INFO] default - errors [ 'Invalid value', 'Invalid value' ]
+[2022-10-22T14:10:23.348] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-22T14:10:23.349] [FATAL] default - ERRORError [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2022-10-22T14:10:33.700] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T14:55:49.989] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T15:46:49.302] [DEBUG] default - Create session: reza
+[2022-10-22T15:47:28.758] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-22T15:47:29.372] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-22T15:55:55.159] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T15:56:30.294] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-22T15:56:30.790] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-22T16:08:15.209] [DEBUG] default - url:/send-message message: success send 6287756420551@c.us
+[2022-10-22T16:08:15.284] [DEBUG] default - url:/send-message message:Insert Send Wa Successfully 38
+[2022-10-22T16:09:01.824] [DEBUG] default - url:/send-message message: success send 6282393169811@c.us
+[2022-10-22T16:09:01.872] [DEBUG] default - url:/send-message message:Insert Send Wa Successfully 39
+[2022-10-22T17:13:56.913] [DEBUG] default - url:/send-message message: success send 6282393169811@c.us
+[2022-10-22T17:13:57.006] [DEBUG] default - url:/send-message message:Insert Send Wa Successfully 40
+[2022-10-22T17:16:05.387] [DEBUG] default - url:/send-message message: success send 6282393169811@c.us
+[2022-10-22T17:16:05.421] [DEBUG] default - url:/send-message message:Insert Send Wa Successfully 41
+[2022-10-22T17:18:34.982] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T17:18:43.918] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-22T17:18:44.100] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-22T17:19:12.722] [DEBUG] default - url:/send-message message: success send 6282393169811@c.us
+[2022-10-22T17:19:12.775] [DEBUG] default - url:/send-message message:Insert Send Wa Successfully 42
+[2022-10-22T17:57:48.289] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T17:57:59.688] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-22T17:57:59.849] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-22T18:23:52.140] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T18:24:44.330] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T18:25:07.614] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-22T18:25:08.214] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-22T18:25:40.939] [DEBUG] default - url:/send-media message: success send wa 6282393169811@c.us
+[2022-10-22T18:25:40.970] [DEBUG] default - url:/send-media message:Insert Send Wa Media Successfully 
+[2022-10-22T18:26:28.366] [DEBUG] default - url:/send-media message: success send wa 6282393169811@c.us
+[2022-10-22T18:26:28.412] [DEBUG] default - url:/send-media message:Insert Send Wa Media Successfully 
+[2022-10-22T18:29:41.254] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T18:30:05.356] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-22T18:30:06.207] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-22T18:30:32.593] [DEBUG] default - url:/send-media message: success send wa 6282393169811@c.us
+[2022-10-22T18:30:32.609] [DEBUG] default - url:/send-media message:Insert Send Wa Media Successfully 
+[2022-10-22T18:38:58.508] [INFO] default - url:/send-media-url message:The number is not registered 
+[2022-10-22T18:41:07.845] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T18:41:26.338] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-22T18:41:28.026] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-22T18:41:32.405] [DEBUG] default - url:/send-media-url message:success send wa 6282393169811@c.us
+[2022-10-22T18:41:32.450] [DEBUG] default - url:/send-media-url message: Insert Send Wa Media Successfully
+[2022-10-22T18:43:08.840] [DEBUG] default - url:/send-media-url message:success send wa 6282393169811@c.us
+[2022-10-22T18:43:08.856] [DEBUG] default - url:/send-media-url message: Insert Send Wa Media Successfully
+[2022-10-22T18:45:13.574] [DEBUG] default - url:/send-media-url message:success send wa 6282393169811@c.us
+[2022-10-22T18:45:13.619] [DEBUG] default - url:/send-media-url message: Insert Send Wa Media Successfully
+[2022-10-22T19:09:08.044] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T19:09:33.964] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-22T19:09:34.198] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-22T19:38:40.895] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-22T19:38:42.377] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-22T19:39:43.880] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T19:40:50.691] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T19:41:17.671] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-22T19:41:17.869] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-22T19:48:26.819] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0E222D0EF5F55F848',
+      _serialized: 'true_6282393169811@c.us_3EB0E222D0EF5F55F848'
+    },
+    body: 'Reza',
+    type: 'chat',
+    t: 1666439306,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    disappearingModeInitiator: 'chat',
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    id: '3EB0E222D0EF5F55F848',
+    _serialized: 'true_6282393169811@c.us_3EB0E222D0EF5F55F848'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'Reza',
+  type: 'chat',
+  timestamp: 1666439306,
+  from: '6287756420551@c.us',
+  to: '6282393169811@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T19:49:40.054] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0A333D720FE8778AF',
+      _serialized: 'true_6282393169811@c.us_3EB0A333D720FE8778AF'
+    },
+    body: 'Weh',
+    type: 'chat',
+    t: 1666439380,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    disappearingModeInitiator: 'chat',
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    id: '3EB0A333D720FE8778AF',
+    _serialized: 'true_6282393169811@c.us_3EB0A333D720FE8778AF'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'Weh',
+  type: 'chat',
+  timestamp: 1666439380,
+  from: '6287756420551@c.us',
+  to: '6282393169811@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T19:50:34.126] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-22T19:50:34.314] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-22T19:50:40.670] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T19:51:04.218] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0BDA63A754743B076',
+      _serialized: 'true_6282393169811@c.us_3EB0BDA63A754743B076'
+    },
+    body: 'qwertyuiop',
+    type: 'chat',
+    t: 1666439464,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    disappearingModeInitiator: 'chat',
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    id: '3EB0BDA63A754743B076',
+    _serialized: 'true_6282393169811@c.us_3EB0BDA63A754743B076'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'qwertyuiop',
+  type: 'chat',
+  timestamp: 1666439464,
+  from: '6287756420551@c.us',
+  to: '6282393169811@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T19:51:38.976] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB00667CAE685C94F5E',
+      _serialized: 'true_6282393169811@c.us_3EB00667CAE685C94F5E'
+    },
+    body: 'Test',
+    type: 'chat',
+    t: 1666439498,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    disappearingModeInitiator: 'chat',
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    id: '3EB00667CAE685C94F5E',
+    _serialized: 'true_6282393169811@c.us_3EB00667CAE685C94F5E'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'Test',
+  type: 'chat',
+  timestamp: 1666439498,
+  from: '6287756420551@c.us',
+  to: '6282393169811@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T19:53:27.820] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0AF220378E1472DAB',
+      _serialized: 'true_6282393169811@c.us_3EB0AF220378E1472DAB'
+    },
+    body: 'test',
+    type: 'chat',
+    t: 1666439607,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    disappearingModeInitiator: 'chat',
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    id: '3EB0AF220378E1472DAB',
+    _serialized: 'true_6282393169811@c.us_3EB0AF220378E1472DAB'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'test',
+  type: 'chat',
+  timestamp: 1666439607,
+  from: '6287756420551@c.us',
+  to: '6282393169811@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T19:53:42.871] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB06D2542F040FDC78C',
+      _serialized: 'true_6282271468484@c.us_3EB06D2542F040FDC78C'
+    },
+    body: 'test',
+    type: 'chat',
+    t: 1666439622,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    id: '3EB06D2542F040FDC78C',
+    _serialized: 'true_6282271468484@c.us_3EB06D2542F040FDC78C'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'test',
+  type: 'chat',
+  timestamp: 1666439622,
+  from: '6287756420551@c.us',
+  to: '6282271468484@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T19:55:08.350] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0D61736ED20BDAC4E',
+      _serialized: 'true_6282393169811@c.us_3EB0D61736ED20BDAC4E'
+    },
+    body: 'test',
+    type: 'chat',
+    t: 1666439708,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    disappearingModeInitiator: 'chat',
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    id: '3EB0D61736ED20BDAC4E',
+    _serialized: 'true_6282393169811@c.us_3EB0D61736ED20BDAC4E'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'test',
+  type: 'chat',
+  timestamp: 1666439708,
+  from: '6287756420551@c.us',
+  to: '6282393169811@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T19:55:23.297] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0D6EFAE9C7E7C7F5D',
+      _serialized: 'true_6282271468484@c.us_3EB0D6EFAE9C7E7C7F5D'
+    },
+    body: 'test',
+    type: 'chat',
+    t: 1666439723,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    id: '3EB0D6EFAE9C7E7C7F5D',
+    _serialized: 'true_6282271468484@c.us_3EB0D6EFAE9C7E7C7F5D'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'test',
+  type: 'chat',
+  timestamp: 1666439723,
+  from: '6287756420551@c.us',
+  to: '6282271468484@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T19:57:46.957] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0A49E29771C1C4402',
+      _serialized: 'true_6282393169811@c.us_3EB0A49E29771C1C4402'
+    },
+    body: 'sdfghjk',
+    type: 'chat',
+    t: 1666439866,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    disappearingModeInitiator: 'chat',
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    id: '3EB0A49E29771C1C4402',
+    _serialized: 'true_6282393169811@c.us_3EB0A49E29771C1C4402'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'sdfghjk',
+  type: 'chat',
+  timestamp: 1666439866,
+  from: '6287756420551@c.us',
+  to: '6282393169811@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T19:58:01.813] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0400E95DED403FE7B',
+      _serialized: 'true_6282271468484@c.us_3EB0400E95DED403FE7B'
+    },
+    body: 'sdfghjk',
+    type: 'chat',
+    t: 1666439881,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    id: '3EB0400E95DED403FE7B',
+    _serialized: 'true_6282271468484@c.us_3EB0400E95DED403FE7B'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'sdfghjk',
+  type: 'chat',
+  timestamp: 1666439881,
+  from: '6287756420551@c.us',
+  to: '6282271468484@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T19:58:40.364] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0F4C6007C5383D382',
+      _serialized: 'true_6282393169811@c.us_3EB0F4C6007C5383D382'
+    },
+    body: 'fghjkl;',
+    type: 'chat',
+    t: 1666439920,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    disappearingModeInitiator: 'chat',
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    id: '3EB0F4C6007C5383D382',
+    _serialized: 'true_6282393169811@c.us_3EB0F4C6007C5383D382'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'fghjkl;',
+  type: 'chat',
+  timestamp: 1666439920,
+  from: '6287756420551@c.us',
+  to: '6282393169811@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T19:58:55.329] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB03E0C50F038E0B6C7',
+      _serialized: 'true_6282271468484@c.us_3EB03E0C50F038E0B6C7'
+    },
+    body: 'fghjkl;',
+    type: 'chat',
+    t: 1666439935,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    id: '3EB03E0C50F038E0B6C7',
+    _serialized: 'true_6282271468484@c.us_3EB03E0C50F038E0B6C7'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'fghjkl;',
+  type: 'chat',
+  timestamp: 1666439935,
+  from: '6287756420551@c.us',
+  to: '6282271468484@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T20:04:45.097] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0A4481AA8606F8F1A',
+      _serialized: 'true_6282271468484@c.us_3EB0A4481AA8606F8F1A'
+    },
+    body: '',
+    type: 'chat',
+    t: 1666440285,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    id: '3EB0A4481AA8606F8F1A',
+    _serialized: 'true_6282271468484@c.us_3EB0A4481AA8606F8F1A'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: '',
+  type: 'chat',
+  timestamp: 1666440285,
+  from: '6287756420551@c.us',
+  to: '6282271468484@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T20:04:59.988] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0DD1F7B58DFFB7325',
+      self: 'out',
+      _serialized: 'true_6287756420551@c.us_3EB0DD1F7B58DFFB7325_out'
+    },
+    body: '',
+    type: 'chat',
+    t: 1666440299,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    id: '3EB0DD1F7B58DFFB7325',
+    self: 'out',
+    _serialized: 'true_6287756420551@c.us_3EB0DD1F7B58DFFB7325_out'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: '',
+  type: 'chat',
+  timestamp: 1666440299,
+  from: '6287756420551@c.us',
+  to: '6287756420551@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T20:05:15.167] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB03344A12773432591',
+      _serialized: 'true_6285964252885@c.us_3EB03344A12773432591'
+    },
+    body: '',
+    type: 'chat',
+    t: 1666440315,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6285964252885',
+      _serialized: '6285964252885@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6285964252885',
+      _serialized: '6285964252885@c.us'
+    },
+    id: '3EB03344A12773432591',
+    _serialized: 'true_6285964252885@c.us_3EB03344A12773432591'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: '',
+  type: 'chat',
+  timestamp: 1666440315,
+  from: '6287756420551@c.us',
+  to: '6285964252885@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T20:08:17.084] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB049FCEED8FBC03108',
+      _serialized: 'true_6282271468484@c.us_3EB049FCEED8FBC03108'
+    },
+    body: 'Testing Broadcast Message With Excel',
+    type: 'chat',
+    t: 1666440497,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    id: '3EB049FCEED8FBC03108',
+    _serialized: 'true_6282271468484@c.us_3EB049FCEED8FBC03108'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'Testing Broadcast Message With Excel',
+  type: 'chat',
+  timestamp: 1666440497,
+  from: '6287756420551@c.us',
+  to: '6282271468484@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T20:08:31.640] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB061B51A39B11EA56E',
+      self: 'out',
+      _serialized: 'true_6287756420551@c.us_3EB061B51A39B11EA56E_out'
+    },
+    body: 'Testing Broadcast Message With Excel',
+    type: 'chat',
+    t: 1666440511,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    id: '3EB061B51A39B11EA56E',
+    self: 'out',
+    _serialized: 'true_6287756420551@c.us_3EB061B51A39B11EA56E_out'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'Testing Broadcast Message With Excel',
+  type: 'chat',
+  timestamp: 1666440511,
+  from: '6287756420551@c.us',
+  to: '6287756420551@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T20:08:47.298] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB01DF189C4CAC2DE16',
+      _serialized: 'true_6285964252885@c.us_3EB01DF189C4CAC2DE16'
+    },
+    body: 'Testing Broadcast Message With Excel',
+    type: 'chat',
+    t: 1666440527,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6285964252885',
+      _serialized: '6285964252885@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6285964252885',
+      _serialized: '6285964252885@c.us'
+    },
+    id: '3EB01DF189C4CAC2DE16',
+    _serialized: 'true_6285964252885@c.us_3EB01DF189C4CAC2DE16'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'Testing Broadcast Message With Excel',
+  type: 'chat',
+  timestamp: 1666440527,
+  from: '6287756420551@c.us',
+  to: '6285964252885@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T20:09:01.406] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0C1C4DB9F62F8C27F',
+      _serialized: 'true_6282393169811@c.us_3EB0C1C4DB9F62F8C27F'
+    },
+    body: 'Testing Broadcast Message With Excel',
+    type: 'chat',
+    t: 1666440541,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    disappearingModeInitiator: 'chat',
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    id: '3EB0C1C4DB9F62F8C27F',
+    _serialized: 'true_6282393169811@c.us_3EB0C1C4DB9F62F8C27F'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'Testing Broadcast Message With Excel',
+  type: 'chat',
+  timestamp: 1666440541,
+  from: '6287756420551@c.us',
+  to: '6282393169811@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T20:10:30.629] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB041E4825833D9C841',
+      _serialized: 'true_6282271468484@c.us_3EB041E4825833D9C841'
+    },
+    body: 'testing broadcast kedua',
+    type: 'chat',
+    t: 1666440630,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    id: '3EB041E4825833D9C841',
+    _serialized: 'true_6282271468484@c.us_3EB041E4825833D9C841'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'testing broadcast kedua',
+  type: 'chat',
+  timestamp: 1666440630,
+  from: '6287756420551@c.us',
+  to: '6282271468484@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T20:10:45.676] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0A8E55D6DFC39421E',
+      self: 'out',
+      _serialized: 'true_6287756420551@c.us_3EB0A8E55D6DFC39421E_out'
+    },
+    body: 'testing broadcast kedua',
+    type: 'chat',
+    t: 1666440645,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    id: '3EB0A8E55D6DFC39421E',
+    self: 'out',
+    _serialized: 'true_6287756420551@c.us_3EB0A8E55D6DFC39421E_out'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'testing broadcast kedua',
+  type: 'chat',
+  timestamp: 1666440645,
+  from: '6287756420551@c.us',
+  to: '6287756420551@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T20:11:00.707] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB09A3286DA5762EDE8',
+      _serialized: 'true_6285964252885@c.us_3EB09A3286DA5762EDE8'
+    },
+    body: 'testing broadcast kedua',
+    type: 'chat',
+    t: 1666440660,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6285964252885',
+      _serialized: '6285964252885@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6285964252885',
+      _serialized: '6285964252885@c.us'
+    },
+    id: '3EB09A3286DA5762EDE8',
+    _serialized: 'true_6285964252885@c.us_3EB09A3286DA5762EDE8'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'testing broadcast kedua',
+  type: 'chat',
+  timestamp: 1666440660,
+  from: '6287756420551@c.us',
+  to: '6285964252885@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T20:11:15.730] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB037D6F21F4CF69EB6',
+      _serialized: 'true_6282393169811@c.us_3EB037D6F21F4CF69EB6'
+    },
+    body: 'testing broadcast kedua',
+    type: 'chat',
+    t: 1666440675,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    disappearingModeInitiator: 'chat',
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    id: '3EB037D6F21F4CF69EB6',
+    _serialized: 'true_6282393169811@c.us_3EB037D6F21F4CF69EB6'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'testing broadcast kedua',
+  type: 'chat',
+  timestamp: 1666440675,
+  from: '6287756420551@c.us',
+  to: '6282393169811@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T20:46:43.826] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T20:47:08.497] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-22T20:47:08.668] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-22T20:47:09.015] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB09D696288B990C961',
+      _serialized: 'true_6282271468484@c.us_3EB09D696288B990C961'
+    },
+    body: 'Last test',
+    type: 'chat',
+    t: 1666442828,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282271468484',
+      _serialized: '6282271468484@c.us'
+    },
+    id: '3EB09D696288B990C961',
+    _serialized: 'true_6282271468484@c.us_3EB09D696288B990C961'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'Last test',
+  type: 'chat',
+  timestamp: 1666442828,
+  from: '6287756420551@c.us',
+  to: '6282271468484@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T20:47:21.285] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB07BACBC700DECA13E',
+      self: 'out',
+      _serialized: 'true_6287756420551@c.us_3EB07BACBC700DECA13E_out'
+    },
+    body: 'Last test',
+    type: 'chat',
+    t: 1666442841,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    id: '3EB07BACBC700DECA13E',
+    self: 'out',
+    _serialized: 'true_6287756420551@c.us_3EB07BACBC700DECA13E_out'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'Last test',
+  type: 'chat',
+  timestamp: 1666442841,
+  from: '6287756420551@c.us',
+  to: '6287756420551@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T20:47:36.366] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB0F07BBAFD059DBF23',
+      _serialized: 'true_6285964252885@c.us_3EB0F07BBAFD059DBF23'
+    },
+    body: 'Last test',
+    type: 'chat',
+    t: 1666442856,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6285964252885',
+      _serialized: '6285964252885@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6285964252885',
+      _serialized: '6285964252885@c.us'
+    },
+    id: '3EB0F07BBAFD059DBF23',
+    _serialized: 'true_6285964252885@c.us_3EB0F07BBAFD059DBF23'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'Last test',
+  type: 'chat',
+  timestamp: 1666442856,
+  from: '6287756420551@c.us',
+  to: '6285964252885@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T20:47:51.164] [INFO] default - Message {
+  _data: {
+    id: {
+      fromMe: true,
+      remote: [Object],
+      id: '3EB04ADF02A6D5F78476',
+      _serialized: 'true_6282393169811@c.us_3EB04ADF02A6D5F78476'
+    },
+    body: 'Last test',
+    type: 'chat',
+    t: 1666442871,
+    from: {
+      server: 'c.us',
+      user: '6287756420551',
+      _serialized: '6287756420551@c.us'
+    },
+    to: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    self: 'out',
+    ack: 0,
+    isNewMsg: true,
+    star: false,
+    kicNotified: false,
+    isFromTemplate: false,
+    pollInvalidated: false,
+    latestEditMsgKey: null,
+    latestEditSenderTimestampMs: null,
+    mentionedJidList: [],
+    isVcardOverMmsDocument: false,
+    isForwarded: false,
+    hasReaction: false,
+    disappearingModeInitiator: 'chat',
+    productHeaderImageRejected: false,
+    lastPlaybackProgress: 0,
+    isDynamicReplyButtonsMsg: false,
+    isMdHistoryMsg: false,
+    stickerSentTs: 0,
+    requiresDirectConnection: null,
+    pttForwardedFeaturesEnabled: true
+  },
+  mediaKey: undefined,
+  id: {
+    fromMe: true,
+    remote: {
+      server: 'c.us',
+      user: '6282393169811',
+      _serialized: '6282393169811@c.us'
+    },
+    id: '3EB04ADF02A6D5F78476',
+    _serialized: 'true_6282393169811@c.us_3EB04ADF02A6D5F78476'
+  },
+  ack: 0,
+  hasMedia: false,
+  body: 'Last test',
+  type: 'chat',
+  timestamp: 1666442871,
+  from: '6287756420551@c.us',
+  to: '6282393169811@c.us',
+  author: undefined,
+  deviceType: 'web',
+  isForwarded: false,
+  forwardingScore: 0,
+  isStatus: undefined,
+  isStarred: false,
+  broadcast: undefined,
+  fromMe: true,
+  hasQuotedMsg: false,
+  duration: undefined,
+  location: undefined,
+  vCards: [],
+  inviteV4: undefined,
+  mentionedIds: [],
+  orderId: undefined,
+  token: undefined,
+  isGif: false,
+  isEphemeral: undefined,
+  links: undefined
+}
+[2022-10-22T20:55:51.588] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T20:56:15.150] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-22T20:56:15.411] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-22T20:56:46.999] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T21:04:29.234] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-22T21:52:09.554] [INFO] default - errors [ 'Invalid value', 'Invalid value' ]
+[2022-10-22T21:52:09.825] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-22T21:52:09.826] [FATAL] default - ERRORError [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+[2022-10-22T21:52:12.316] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-23T13:20:57.769] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-23T13:21:10.300] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-23T13:21:10.471] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-23T14:00:31.528] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-23T14:01:01.488] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-23T14:01:01.801] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-23T15:44:55.019] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-23T15:45:23.199] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-23T15:45:23.483] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-23T15:58:06.937] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-23T15:58:35.945] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-23T15:58:36.194] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-23T17:12:34.829] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-23T17:13:15.532] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-23T17:13:15.955] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-23T17:24:07.581] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-23T17:24:50.402] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-23T17:24:51.002] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-23T17:27:05.912] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-23T17:27:41.508] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-23T17:27:41.860] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-23T17:51:33.071] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-23T17:51:56.473] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-23T17:51:56.600] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-24T11:10:55.937] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-24T11:10:56.105] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-24T11:11:09.223] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-24T11:21:09.735] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-24T11:21:26.272] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-24T11:21:26.450] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-24T11:22:06.692] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-24T11:22:30.595] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-24T11:22:48.068] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-24T11:22:48.831] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-24T11:27:36.031] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-24T11:27:36.264] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-24T11:29:19.897] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-24T11:29:23.349] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-24T11:29:48.118] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-24T11:30:30.148] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-24T11:30:32.345] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-24T11:31:43.703] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-24T11:32:06.653] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-24T11:32:07.043] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-24T11:32:17.616] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-24T11:32:37.063] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-24T11:33:08.430] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-24T11:34:17.184] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-24T11:34:20.886] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-24T11:35:31.927] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-24T11:35:54.934] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-24T11:36:15.080] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-24T11:36:17.397] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-24T11:36:34.933] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-24T11:36:55.053] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-24T11:37:19.391] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-24T11:37:19.474] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-24T11:38:41.196] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-24T11:39:24.858] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-24T11:40:04.067] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-24T11:41:22.836] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-24T11:42:05.790] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-24T11:42:57.541] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-24T11:43:36.157] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-24T14:19:44.598] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-26T15:01:09.652] [DEBUG] default - message { id: 'reza', text: 'Whatsapp is authenticated!' }
+[2022-10-26T15:01:09.924] [INFO] default - message { id: 'reza', text: 'Whatsapp is ready!' }
+[2022-10-26T15:03:14.748] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-26T16:43:41.081] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-26T16:44:26.112] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-26T16:46:05.492] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-26T16:47:32.699] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-26T16:49:47.654] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-26T16:53:31.645] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-26T16:58:57.878] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-26T20:49:08.842] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-26T20:51:45.688] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-26T20:58:09.655] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-26T21:00:14.280] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-26T21:07:20.662] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-26T21:10:40.864] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-26T21:36:37.858] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-26T21:38:50.580] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-26T21:53:12.367] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T13:52:12.730] [FATAL] default - ERRORError: connect ECONNREFUSED 127.0.0.1:3306
+[2022-10-27T13:52:55.935] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T13:55:44.621] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T13:56:17.612] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T13:56:48.249] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T13:57:22.188] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T13:58:47.829] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T13:59:25.195] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T13:59:40.759] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T13:59:56.180] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T14:00:08.825] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T14:03:40.027] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T14:23:57.386] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T16:24:04.586] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T17:13:55.830] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T17:14:26.657] [DEBUG] default - Create session: REZA
+[2022-10-27T17:15:10.542] [INFO] default - message { id: 'REZA', text: 'QR Code received, scan please!' }
+[2022-10-27T17:18:12.470] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T17:18:20.392] [INFO] default - message { id: 'REZA', text: 'QR Code received, scan please!' }
+[2022-10-27T17:18:40.807] [DEBUG] default - Delete session: REZA
+[2022-10-27T17:18:59.909] [DEBUG] default - Create session: Reza
+[2022-10-27T17:19:20.011] [INFO] default - message { id: 'REZA', text: 'QR Code received, scan please!' }
+[2022-10-27T17:19:39.972] [INFO] default - message { id: 'REZA', text: 'QR Code received, scan please!' }
+[2022-10-27T17:19:59.974] [INFO] default - message { id: 'REZA', text: 'QR Code received, scan please!' }
+[2022-10-27T17:20:19.910] [INFO] default - message { id: 'REZA', text: 'QR Code received, scan please!' }
+[2022-10-27T17:20:59.040] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T17:21:11.694] [DEBUG] default - Create session: sdfg
+[2022-10-27T17:21:22.850] [INFO] default - message { id: 'sdfg', text: 'QR Code received, scan please!' }
+[2022-10-27T17:22:09.691] [DEBUG] default - message { id: 'sdfg', text: 'Whatsapp is authenticated!' }
+[2022-10-27T17:22:10.183] [INFO] default - message { id: 'sdfg', text: 'Whatsapp is ready!' }
+[2022-10-27T19:08:49.774] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-27T19:08:51.772] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-27T19:08:53.643] [INFO] default - errors Correct Email, Email Not Found
+[2022-10-27T19:08:56.360] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T19:09:20.510] [DEBUG] default - message { id: 'sdfg', text: 'Whatsapp is authenticated!' }
+[2022-10-27T19:09:21.581] [INFO] default - message { id: 'sdfg', text: 'Whatsapp is ready!' }
+[2022-10-27T19:10:54.762] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T19:11:27.541] [DEBUG] default - message { id: 'sdfg', text: 'Whatsapp is authenticated!' }
+[2022-10-27T19:11:28.074] [INFO] default - message { id: 'sdfg', text: 'Whatsapp is ready!' }
+[2022-10-27T20:17:43.837] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T20:18:24.188] [DEBUG] default - message { id: 'sdfg', text: 'Whatsapp is authenticated!' }
+[2022-10-27T20:18:27.176] [INFO] default - message { id: 'sdfg', text: 'Whatsapp is ready!' }
+[2022-10-27T20:24:08.237] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T20:24:50.909] [DEBUG] default - message { id: 'sdfg', text: 'Whatsapp is authenticated!' }
+[2022-10-27T20:24:52.539] [INFO] default - message { id: 'sdfg', text: 'Whatsapp is ready!' }
+[2022-10-27T21:04:56.225] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T21:05:09.899] [DEBUG] default - message { id: 'sdfg', text: 'Whatsapp is authenticated!' }
+[2022-10-27T21:05:10.662] [INFO] default - message { id: 'sdfg', text: 'Whatsapp is ready!' }
+[2022-10-27T21:09:30.661] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T21:10:02.221] [DEBUG] default - message { id: 'sdfg', text: 'Whatsapp is authenticated!' }
+[2022-10-27T21:10:03.148] [INFO] default - message { id: 'sdfg', text: 'Whatsapp is ready!' }
+[2022-10-27T21:11:48.919] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T21:12:20.155] [DEBUG] default - message { id: 'sdfg', text: 'Whatsapp is authenticated!' }
+[2022-10-27T21:12:20.939] [INFO] default - message { id: 'sdfg', text: 'Whatsapp is ready!' }
+[2022-10-27T21:21:54.434] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T21:22:23.485] [DEBUG] default - message { id: 'sdfg', text: 'Whatsapp is authenticated!' }
+[2022-10-27T21:22:24.206] [INFO] default - message { id: 'sdfg', text: 'Whatsapp is ready!' }
+[2022-10-27T21:22:48.240] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T21:23:10.220] [DEBUG] default - message { id: 'sdfg', text: 'Whatsapp is authenticated!' }
+[2022-10-27T21:23:10.778] [INFO] default - message { id: 'sdfg', text: 'Whatsapp is ready!' }
+[2022-10-27T21:36:08.846] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T21:36:36.158] [DEBUG] default - message { id: 'sdfg', text: 'Whatsapp is authenticated!' }
+[2022-10-27T21:36:36.751] [INFO] default - message { id: 'sdfg', text: 'Whatsapp is ready!' }
+[2022-10-27T21:37:34.524] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-27T21:37:54.812] [DEBUG] default - message { id: 'sdfg', text: 'Whatsapp is authenticated!' }
+[2022-10-27T21:37:55.512] [INFO] default - message { id: 'sdfg', text: 'Whatsapp is ready!' }
+[2022-10-28T16:11:54.712] [FATAL] default - ERRORError: connect ECONNREFUSED 127.0.0.1:3306
+[2022-10-28T16:15:53.804] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T16:17:27.478] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T16:19:58.301] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T16:23:06.376] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T17:14:38.472] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T17:17:01.905] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T17:17:42.510] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T17:18:10.717] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T17:18:42.000] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T17:19:59.901] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T18:47:27.374] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T20:07:27.896] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T20:12:04.543] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T20:12:25.520] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T20:13:05.550] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T20:13:27.310] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T21:29:40.516] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T21:50:42.206] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T21:55:10.131] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T21:57:22.128] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-28T22:04:26.150] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T12:40:38.111] [FATAL] default - ERRORError: connect ECONNREFUSED 127.0.0.1:3306
+[2022-10-29T12:41:12.791] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T12:43:00.197] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T12:43:48.016] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T12:47:08.069] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T12:51:41.617] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T14:09:46.900] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T14:13:14.898] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T14:15:01.121] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T14:22:44.486] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T14:28:01.398] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T16:12:54.542] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T16:13:41.359] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T16:14:34.292] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T16:15:52.388] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T16:18:10.067] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T16:19:20.258] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T16:20:23.709] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T16:21:19.502] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T17:29:13.544] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T17:34:16.173] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T17:45:37.767] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T17:46:37.612] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T17:48:07.070] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T17:49:31.453] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T17:55:08.874] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T17:56:54.726] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T17:58:31.343] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T17:59:44.479] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T19:07:52.912] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-29T19:11:07.775] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-30T11:04:29.346] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-30T11:21:02.156] [DEBUG] default - Success Login admin@gmail.com
+[2022-10-30T11:22:11.985] [DEBUG] default - Success Login admin@gmail.com

@@ -1,0 +1,81 @@
+<% layout('layout') -%> 
+<div class="main-panel">
+    <div class="container">
+        <div class="panel-header bg-primary-gradient">
+            <div class="page-inner py-5">
+                <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
+                    <div>
+                        <h2 class="text-white pb-2 fw-bold">Dashboard</h2>
+                        <h5 class="text-white op-7 mb-2">Premium Bootstrap 4 Admin Dashboard</h5>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="page-inner mt--5">
+            <div class="row mt--2">
+                <div class="col-md-12">
+                    <div class="card full-height">
+                        <div class="card-body">
+                            <div class="card-title">List Groups</div>
+                            <div class="d-flex flex-wrap justify-content-around pb-2 pt-4">
+                                <table class="table" id="example">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">Id Groups</th>
+                                        <th scope="col">Name Groups</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container-fluid">
+            <nav class="pull-left">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Help
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Licenses
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright ml-auto">
+                2018, made with <i class="fa fa-heart heart text-danger"></i> by <a href="#">ThemeKita</a>
+            </div>				
+        </div>
+    </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#example').DataTable({
+            processing: true,
+            ajax: {
+                'url':'/listgroups/listGroups',
+                'type': 'GET'
+            },
+            columns: [
+                {data: 'id', name: 'id'},
+                {data: 'id_group', name: 'id_group'},
+                {data: 'nama_group', name: 'nama_group'}
+            ]
+        });
+        
+    });
+</script>
