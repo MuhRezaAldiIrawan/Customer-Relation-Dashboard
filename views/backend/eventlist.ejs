@@ -1,32 +1,4 @@
 <% layout('default') -%> 
-
-<!-- 
-<div class="row">
-<div class="d-flex justify-content-center">
-  <div class="col-xl-10">
-      
-        <div class="col-md">
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img class="card-img card-img-left" src="../assets/img/elements/12.jpg" alt="Card image" />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title"></h3>
-                  <p class="card-text"><small class="text-muted"></small></p>
-
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
- 
-      </div>
-    </div>
-  </div> -->
-
   <div class="row ">
     <% if(data.length){ for(var i = 0; i< data.length; i++) {%>
     <div class="col-xl-6 mt-4">
@@ -42,9 +14,9 @@
             </div>
             <div class="card-footer border-0 pt-0">
               <div class="d-flex justify-content-end">
-              <button type="button" class="btn btn-primary">
+              <a href="detailevent/edit/<%=data[i].id%>" type="button" class="btn btn-primary">
                 <span class="tf-icons bx bx-purchase-tag-alt"></span>&nbsp; Detail
-              </button>
+              </a>
             </div>
             </div>
         </div>
@@ -53,6 +25,8 @@
       <h1>No data ever existed.</h1>
   <% } %>
 </div>
+
+
 
 
 

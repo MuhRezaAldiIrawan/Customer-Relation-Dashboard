@@ -1,0 +1,63 @@
+<% layout('defaultedit') -%> 
+
+
+
+  <div class="col-md-12">
+    <div class="card mb-4">
+      <h5 class="card-header">Detail Event List</h5>
+      <div class="card-body">
+        <form method="POST"  action="detailevent/edit/<%= data.id %>">
+          <div class="row">
+            <div class="col mb-3">
+              <label for="nameWithTitle" class="form-label">Nama Event</label>
+              <input type="text" id="nama"  name="nama" class="form-control" placeholder="Enter Name" value="<%= data.nama%>" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col mb-3">
+              <label for="nameWithTitle" class="form-label">Organizer</label>
+              <input type="text" id="organizer" name="organizer" class="form-control" placeholder="Enter Name" value="<%= data.organizer%>" />
+            </div>
+          </div>
+          <div class="row g-2">
+            <div class="col mb-0">
+              <label for="emailWithTitle" class="form-label">Start</label>
+              <input type="DATE" id="date-picker" name="start" class="form-control" placeholder="DD / MM / YY" value="<%= data.start%>"/>
+            </div>
+            <div class="col mb-0">
+              <label for="dobWithTitle" class="form-label">End</label>
+              <input type="date" id="date-picker" name="end" class="form-control" placeholder="DD / MM / YY" value="<%= data.end%>"/>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col mb-3">
+              <label for="nameWithTitle" class="form-label">Place</label>
+              <input type="text" id="place" name="place" class="form-control" placeholder="Enter Name" value="<%= data.place%>"/>
+            </div>
+          </div>
+          <div class="mb-3">
+            <input type="submit" name="submit_button" class="btn btn-primary" value="Edit" />
+        </div>
+        </form>
+ 
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var date = new Date();
+    var year = new date.getFullYear();
+    var month = new date.getMonth()+1;
+    var todayDate = String(date.getDate()).padStart(2,'0');
+    var datePattern = year + '-' + month + '-' + todayDate;
+    document.getElementById("date-picker").value = datePattern;
+    document.write(datePattern);
+  </script>
+
+
+
+
+
+
+
+

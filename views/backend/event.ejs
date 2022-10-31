@@ -34,7 +34,7 @@
     <div class="ml-md-auto py-2 py-md-0">
        <button class="btn btn-primary btn-round" id="btnAdd" >
            <span class="tf-icons bx bx-user-plus"></span>&nbsp;
-           Add Users
+           Add Event
        </button>
      </div>
    </div>
@@ -54,7 +54,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title text-center" id="exampleModalLabel">Add Account Users</h5>
+        <h5 class="modal-title text-center" id="exampleModalLabel">Add Event</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -74,11 +74,11 @@
 
               <div class="form-group">
                   <label for="exampleInputEmail1">Start</label>
-                  <input type="date" class="form-control" name="start" placeholder="" required>
+                  <input type="date" class="form-control" name="start" id="date-picker" placeholder="" required>
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">End</label>
-                <input type="date" class="form-control" name="end" placeholder="" required>
+                <input type="date" class="form-control" name="end" id="date-picker" placeholder="" required>
               </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Place</label>
@@ -131,4 +131,172 @@
             buttonText: '<span class="input-group-addon"><i class="fas fa-calendar-alt"></i></span>'
           });
     });
+</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+      $('#example').DataTable({
+          processing: true,
+          ajax: {
+              'url':'/user/data-users',
+              'type': 'GET'
+          },
+          columns: [
+              {data: 'id', name: 'id'},
+              {data: 'username', name: 'username'},
+              {data: 'email', name: 'email'},
+              {data: 'role', name: 'role'},
+              {   
+                  data: 'id',
+                  render: function ( data, type, row ) {
+                      return '<button onClick="Edit(this)" data-id="'+data+'" id="Edit" class="btn btn-warning">Edit</button>&nbsp;'+
+                      '<button onClick="Reset(this)" data-id="'+data+'" id="Edit" class="btn btn-primary">Reset Password</button>&nbsp;'+
+                      '<button onClick="Hapus(this)" data-id="'+data+'" class="btn btn-danger">Hapus</button>';
+                  },
+                  searchable:false,
+                  orderable:false
+              }
+          ]
+      });
+      
+  });
+
+
+  function reloadTable() {
+      $("#example").DataTable().ajax.reload(null,false);
+  }
+  $('#btnAdd').click(function () {
+      $('#myForm')[0].reset();
+      $('#myModal').modal('show');
+      $('#hiddenpass').show();
+      $('#myForm').attr('action',"");
+      $('#myModal').find('.modal-title').text('Tambah Data');
+      $('#btnSave').html('<i class="fa fa-save"></i>&nbsp;Simpan');
+      $('#myForm').attr('action',"/event/add-event");
+  });
+
+  $('#btnSave').click(function () {
+      var url = $('#myForm').attr('action');
+      var data = new FormData($('#myForm')[0]);
+      $('#btnSave').html('<i class="fa fa-save"></i>&nbsp; Simpan <img width="30" heigth="30" src="">').attr('disabled', 'disabled');
+      $.ajax({
+          type : 'ajax',
+          method: 'POST',
+          url  : url,
+          data : data,
+          async: false,
+          cache: false,
+          contentType:false,
+          processData:false,
+          dataType :'json',
+          success : function(response){
+              reloadTable();
+              $('#btnSave').prop('enable', false);
+              $('#myModal').modal('hide');
+              if(response.status==200){
+                  Swal.fire('Success!','Succes Input Data.','success');
+              }else{
+                  Swal.fire('Warning!',response.data[0].message,'warning');
+              }
+          },
+          error: function(){
+              $('#btnSave').prop('disabled', false);
+              $('#myModal').modal('hide');
+              Swal.fire('Failed!','Failed Input Data.','error');
+          }
+      });
+  });
+  function Edit(id){
+      $('#btnSave').html('Update');
+      $('#myModal').modal('show');
+      $('#myForm').attr('action',"");
+      $('#myModal').find('.modal-title').text('Ubah Data');
+      $('#myForm').attr('action',"/users/update-users");
+      var id = $(id).data("id");
+      $.ajax({
+          type : 'ajax',
+          method :'get',
+          url  :'/user/edit-users/'+id+'',
+          async: false,
+          dataType :'json',
+          success : function(response){
+              $('input[name=id]').val(response.data[0].id);
+              $('input[name=username]').val(response.data[0].username);
+              $('input[name=email]').val(response.data[0].email);
+              $('select[name=role]').val(response.data[0].role);
+              $('#hiddenpass').hide();
+          }
+      });
+  }
+  function Hapus(id){
+      var id = $(id).data("id");
+      Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      type: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+      }).then((result) => {
+          if (result.value) {
+              $.ajax({
+                  type : 'ajax',
+                  method :'get',
+                  url  :'/user/delete-users/'+id+'',
+                  async: false,
+                  dataType :'json',
+                  success : function(response){
+                      reloadTable();
+                      Swal.fire(
+                      'Deleted!',
+                      'Your file has been deleted.',
+                      'success'
+                      )
+                  }
+              });
+          }
+      })    
+  }
+
+  function Reset(id){
+      var id = $(id).data("id");
+      Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't reset password!",
+      type: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+      }).then((result) => {
+          if (result.value) {
+              $.ajax({
+                  type : 'ajax',
+                  method :'get',
+                  url  :'/user/reset-password/'+id+'',
+                  async: false,
+                  dataType :'json',
+                  success : function(response){
+                      reloadTable();
+                      Swal.fire(
+                      'Success!',
+                      'Success Reset Password, Password Default 123456.',
+                      'success'
+                      )
+                  }
+              });
+          }
+      })  
+  }
+
+
+</script>
+<script>
+  var date = new Date();
+  var year = new date.getFullYear();
+  var month = new date.getMonth()+1;
+  var todayDate = String(date.getDate()).padStart(2,'0');
+  var datePattern = year + '-' + month + '-' + todayDate;
+  document.getElementById("date-picker").value = datePattern;
+  document.write(datePattern);
 </script>

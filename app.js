@@ -39,6 +39,7 @@ var contactRouter = require('./routes/contact');
 var userRouter = require('./routes/user');
 var eventRouter = require('./routes/event');
 var eventlistRouter = require('./routes/eventlist');
+var detaileventRouter = require('./routes/detailevent');
 
 
 
@@ -80,6 +81,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 // Route CR-PROJECT
 app.use('/dashboard', dashboardRouter);
 app.use('/agent', agentRouter);
@@ -108,7 +110,14 @@ app.use('/user/logs', userRouter);
 app.use('/event', eventRouter);
 app.use('/event/add-event', eventRouter);
 app.use('/listevent', eventlistRouter);
-app.use('/listevent/action', eventlistRouter);
+app.use('/detailevent', detaileventRouter);
+app.use('/detailevent/edit/:id', detaileventRouter);
+// app.use('/listevent/:id', eventlistRouter);
+// app.use('/listevent/action', eventlistRouter);
+// app.use('/listevent/edit/:id', eventlistRouter);
+// app.use('/listevent/update/', eventlistRouter);
+// app.use('/evenlist', detaileventRouter);
+// app.use('/eventlist/edit/:id', detaileventRouter);
 // app.use('/listevent/EventList', eventlistRouter);
 
 
