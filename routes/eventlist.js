@@ -6,7 +6,17 @@ const database = require('../database/database');
 /* GET users listing. */
 
 router.get('/',Auth_mdw.check_login, function (req, res, next) {
-  database.query('SELECT * FROM tbl_event ORDER BY id desc', function (err, rows) {
+  database.query('SELECT * FROM tbl_event', function (err, rows) {
+    if (err) {
+      req.flash('error', err)
+      res.render('backend/eventlist', { data: '' })
+    } else {
+      res.render('backend/eventlist', { data: rows })
+    }
+  })
+});
+router.get('/getdata',Auth_mdw.check_login, function (req, res, next) {
+  database.query('SELECT * FROM tbl_event', function (err, rows) {
     if (err) {
       req.flash('error', err)
       res.render('backend/eventlist', { data: '' })

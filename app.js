@@ -5,6 +5,19 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var ejs = require('ejs-locals');
 const schedule = require('node-schedule');
+
+
+const multer = require('multer');
+ 
+// For Multer Storage
+var multerStorage = multer.diskStorage({
+    destination: function (req, file, callback) {
+    callback(null, path.join(__dirname,'my_uploads'));
+    },
+    filename: function (req, file, callback) {
+    callback(null, Date.now() + '_' + file.originalname);
+    }
+});
 // const http = require('http');
 var session = require('express-session');
 var bodyParser = require('body-parser');
@@ -110,8 +123,14 @@ app.use('/user/logs', userRouter);
 app.use('/event', eventRouter);
 app.use('/event/add-event', eventRouter);
 app.use('/listevent', eventlistRouter);
+app.use('/listevent/getdata', eventlistRouter);
 app.use('/detailevent', detaileventRouter);
 app.use('/detailevent/edit/:id', detaileventRouter);
+app.use('/testupdate/update/:id', detaileventRouter);
+
+// app.use('/eventdetail', detaileventRouter);
+
+// app.use('/detailevent/edit', detaileventRouter);
 // app.use('/listevent/:id', eventlistRouter);
 // app.use('/listevent/action', eventlistRouter);
 // app.use('/listevent/edit/:id', eventlistRouter);

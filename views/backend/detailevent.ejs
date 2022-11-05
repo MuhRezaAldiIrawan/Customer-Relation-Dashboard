@@ -1,12 +1,9 @@
 <% layout('defaultedit') -%> 
-
-
-
   <div class="col-md-12">
     <div class="card mb-4">
       <h5 class="card-header">Detail Event List</h5>
       <div class="card-body">
-        <form method="POST"  action="detailevent/edit/<%= data.id %>">
+        <form action="/testupdate/update/<%= data.id %>" method="POST">
           <div class="row">
             <div class="col mb-3">
               <label for="nameWithTitle" class="form-label">Nama Event</label>
@@ -36,10 +33,9 @@
             </div>
           </div>
           <div class="mb-3">
-            <input type="submit" name="submit_button" class="btn btn-primary" value="Edit" />
+            <input type="submit"  class="btn btn-primary" />
         </div>
         </form>
- 
       </div>
     </div>
   </div>
