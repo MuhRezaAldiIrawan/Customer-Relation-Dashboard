@@ -5,16 +5,7 @@ const database = require('../database/database');
 
 /* GET users listing. */
 
-// router.get('/',Auth_mdw.check_login, function (req, res, next) {
-//   database.query('SELECT * FROM tbl_event ORDER BY id desc', function (err, rows) {
-//     if (err) {
-//       req.flash('error', err)
-//       res.render('backend/detailevent', { data: '' })
-//     } else {
-//       res.render('backend/detailevent', { data: rows })
-//     }
-//   })
-// });
+
 
 router.get('/edit/(:id)', function(request, response, next){
 
@@ -30,31 +21,35 @@ router.get('/edit/(:id)', function(request, response, next){
 
 });
 
-router.post('/update/:id', function(req, res, next) {
-  var id = req.body.id;
+router.post('/update/(:id)', (req, res) => {
+    // buat variabel penampung data dan query sql
+    const data = { ...req.body };
+    const querySearch = 'SELECT * FROM tbl_event WHERE id = ?';
+    const queryUpdate = 'UPDATE tbl_event SET ? WHERE id = ?';
 
-  var query = "UPDATE tbl_event SET nama='"+req.body.nama+"',  organizer='"+req.body.organizer+"',  start='"+req.body.start+"',  end='"+req.body.end+"',  place='"+req.body.place+"' where id ="+id;
+    // jalankan query untuk melakukan pencarian data
+    database.query(querySearch, req.params.id, (err, rows, field) => {
+        // error handling
+        if (err) {
+            return res.status(500).json({ message: 'Ada kesalahan', error: err });
+        }
 
-  database.query(query, function(error, data){
+        // jika id yang dimasukkan sesuai dengan data yang ada di db
+        if (rows.length) {
+            // jalankan query update
+            database.query(queryUpdate, [data, req.params.id], (err, rows, field) => {
+                // error handling
+                if (err) {
+                    return res.status(500).json({ message: 'Ada kesalahan', error: err });
+                }
 
-		res.render('backend/detailevent');
-
-	});
-
+                // jika update berhasil
+				res.redirect('/')
+                // res.status(200).json({ success: true, message: 'Berhasil update data!' });
+            });
+        } else {
+            return res.status(404).json({ message: 'Data tidak ditemukan!', success: false });
+        }
+    });
 });
-
-// router.get('/update', function(request, response, next){
-
-// 	var id = request.body.id;
-
-// 	var query = `UPDATE tbl_event SET  nama='"+req.body.nama+"', organizer='"+req.body.organizer+"', start='"+req.body.start+"', end='"+req.body.end+"', place='"+req.body.place+"' WHERE id = "${id}"`;
-
-// 	database.query(query, function(error, data){
-
-// 		response.render('backend/detailevent', {title: 'Edit MySQL Table Data', action:'edit', data:data[0]});
-
-// 	});
-
-// });
-
 module.exports = router;
