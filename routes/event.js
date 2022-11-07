@@ -18,7 +18,6 @@ router.post('/add-event', function(req, res, next) {
     start: 'required',
     end: 'required',
     place: 'required',
-    image: 'required',
   });
   v.check().then((matched) => {
     if (!matched) {
@@ -30,7 +29,6 @@ router.post('/add-event', function(req, res, next) {
         start: req.body.start, 
         end: req.body.end,
         place: req.body.place, 
-        image: req.file.path,
       }];
       console.log(Datapost);
         knex.transaction(function(trx) {

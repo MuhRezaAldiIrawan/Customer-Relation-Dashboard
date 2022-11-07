@@ -3,6 +3,7 @@ var router = express.Router();
 var Auth_mdw = require('../middlewares/auth');
 const database = require('../database/database');
 
+
 /* GET users listing. */
 
 router.get('/',Auth_mdw.check_login, function (req, res, next) {
@@ -26,133 +27,57 @@ router.get('/getdata',Auth_mdw.check_login, function (req, res, next) {
   })
 });
 
-// router.get('/listevent/:id', function(request, response, next){
+router.get('/deleteitem/(:id)', (req, res) => {
+  // buat query sql untuk mencari data dan hapus
+  const querySearch = 'SELECT * FROM tbl_event WHERE id = ?';
+  const queryDelete = 'DELETE FROM tbl_event WHERE id = ?';
 
-// 	var id = request.params.id;
+  // jalankan query untuk melakukan pencarian data
+  database.query(querySearch, req.params.id, (err, rows, field) => {
+      // error handling
+      if (err) {
+          return res.status(500).json({ message: 'Ada kesalahan', error: err });
+      }
 
-// 	var query = `SELECT * FROM tbl_event WHERE id = "${id}"`;
+      // jika id yang dimasukkan sesuai dengan data yang ada di db
+      if (rows.length) {
+          // jalankan query delete
+          database.query(queryDelete, req.params.id, (err, rows, field) => {
+              // error handling
+              if (err) {
+                  return res.status(500).json({ message: 'Ada kesalahan', error: err });
+              }
 
-// 	database.query(query, function(error, data){
+              // jika delete berhasil
+              res.redirect('/')
+              // res.status(200).json({ success: true, message: 'Berhasil hapus data!' });
+          });
+      } else {
+          return res.status(404).json({ message: 'Data tidak ditemukan!', success: false });
+      }
+  });
+});
 
-// 		response.render('backend/eventlist', {title: 'Edit MySQL Table Data', action:'edit', data:data[i]});
-
-// 	});
-
+// router.get('/delete-event/:id', function(req, res, next) {
+//   console.log(req.params.id);
+//   knex.transaction(function(trx) {
+//     knex('tbl_event').where({
+//       id: req.params.id
+//     }).del()
+//         .then()
+//         .then(trx.commit)
+//         .catch(trx.rollback);
+//     }).then(function(data) {
+//       res.json({ success: true, message: data });
+//     }).catch(function(err) {
+//       console.error(err);
+//     });
 // });
 
-
-
-// router.get('/edit/(:id)', function(req, res, next) {
-
-//   let id = req.params.id;
- 
-//   database.query('SELECT * FROM tbl_event WHERE id = ' + id, function(err, rows, fields) {
-//       if(err) throw err
-       
-//       // if user not found
-//       if (rows.length <= 0) {
-//           req.flash('error', 'Data Event Dengan ID ' + id + " Tidak Ditemukan")
-//           res.redirect('backend/eventlist')
-//       }
-//       // if book found
-//       else {
-//           // render to edit.ejs
-//           res.render('backend/eventlist/edit', {
-//               id:      rows[0].id,
-//               nama:      rows[0].nama,
-//               organizer:   rows[0].organizer,
-//               start: rows[0].start,
-//               end:      rows[0].end,
-//               place:   rows[0].place,
-              
-//           })
-//       }
+// router.get('/deleteitem/(:id)', function (req, res, next){
+//   database.query('DELETE FROM tbl_event WHERE id = ?', req.query.id, function (err,rs){
+//     res.redirect('/');
 //   })
 // })
-
-// /**
-// * UPDATE POST
-// */
-// router.post('/update/:id', function(req, res, next) {
-
-//   let id      = req.params.id;
-//   let nama      = req.body.nama;
-//   let organizer   = req.body.organizer;
-//   let start = req.body.start;
-//   let end   = req.body.end;
-//   let place = req.body.place;
-//   let errors  = false;
-
-//   if(nama.length === 0) {
-//       errors = true;
-
-//       // set flash message
-//       req.flash('error', "Silahkan Masukkan Nama Event");
-//       // render to edit.ejs with flash message
-//       res.render('backend/eventlist/edit', {
-//           id:         req.params.id,
-//           nama:         nama,
-//           organizer:      organizer,
-//           start:    start,
-//           end:    end,
-//           place:    place,
-
-//       })
-//   }
-
-//   if(organizer.length === 0) {
-//       errors = true;
-
-//       // set flash message
-//       req.flash('error', "Silahkan Masukkan Organizer Event");
-//       // render to edit.ejs with flash message
-//       res.render('backend/eventlist/edit', {
-//         id:         req.params.id,
-//         nama:      nama,
-//         organizer:      organizer,
-//         start:    start,
-//         end:    end,
-//         place:    place,
-
-//       })
-//   }
-
-//   // if no error
-//   if( !errors ) {   
-
-//       let formData = {
-//           nama: nama,
-//           organizer: organizer,
-//           start: start,
-//           end: end,
-//           place: place
-          
-//       }
-
-//       // update query
-//       database.query('UPDATE tbl_event SET ? WHERE id = ' + id, formData, function(err, result) {
-//           //if(err) throw err
-//           if (err) {
-//               // set flash message
-//               req.flash('error', err)
-//               // render to edit.ejs
-//               res.render('backend/eventlist/edit', {
-//                   id:         req.params.id,
-//                   nama:   formData.nama,
-//                   organizer: formData.organizer,
-//                   start:   formData.start,
-//                   end: formData.end,
-//                   place: formData.place,
-                  
-
-//               })
-//           } else {
-//               req.flash('success', 'Data Berhasil Diupdate!');
-//               res.redirect('backend/eventlist/');
-//           }
-//       })
-//   }
-// })
-
 
 module.exports = router;

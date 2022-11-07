@@ -2,7 +2,7 @@
   <div class="row ">
     <% if(data.length){ for(var i = 0; i< data.length; i++) {%>
     <div class="col-xl-6 mt-4">
-        <div class="card">
+        <div class="card" id="test">
             <div class="card-header border-0 pb-0">
                 <h5 class="card-title"><%= data[i].nama%></h5>
             </div>
@@ -14,6 +14,12 @@
             </div>
             <div class="card-footer border-0 pt-0">
               <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-icon btn-success mr-2">
+                  <span class="tf-icons bx bx-image-alt"></span>
+                </button>
+                <a href="/listevent/deleteitem/<%=data[i].id%>" type="button" class="btn btn-icon btn-danger mr-2" onClick= "return confirm ('Are you sure')" >
+                  <span class="tf-icons bx bx-trash"></span>
+                </a>
                 <a href="/detailevent/edit/<%=data[i].id%>" type="button" class="btn btn-primary">
                   <span class="tf-icons bx bx-purchase-tag-alt"></span>&nbsp; Detail
                 </a>
@@ -25,6 +31,49 @@
       <h1>No data ever existed.</h1>
   <% } %>
 </div>
+
+<script type="text/javascript">
+
+function reloadpage() {
+        $("#test").ajax.reload(null,false);
+    }
+
+  function Hapus(id){
+      var id = $(id).data("id");
+      Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      type: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+      }).then((result) => {
+          if (result.value) {
+              $.ajax({
+                  type : 'ajax',
+                  method :'get',
+                  url  :'/listevent/delete-event/<%=data[0].id%>',
+                  async: false,
+                  dataType :'json',
+                  success : function(response){
+                    reloadpage()
+                      Swal.fire(
+                      'Deleted!',
+                      'Your file has been deleted.',
+                      'success'
+                      )
+                  },
+                  redirect : ('/')
+              });
+          }
+      })    
+  }
+
+
+
+
+</script>
 
 
 

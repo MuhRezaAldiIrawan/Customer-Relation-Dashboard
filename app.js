@@ -124,6 +124,8 @@ app.use('/event', eventRouter);
 app.use('/event/add-event', eventRouter);
 app.use('/listevent', eventlistRouter);
 app.use('/listevent/getdata', eventlistRouter);
+app.use('/listevent//deleteitem', eventlistRouter);
+app.use('/listevent/delete-event', eventlistRouter);
 app.use('/detailevent', detaileventRouter);
 app.use('/detailevent/edit', detaileventRouter);
 app.use('/detailevent/update', detaileventRouter);
