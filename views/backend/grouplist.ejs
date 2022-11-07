@@ -49,17 +49,13 @@
  
   </div>
 
-
-
-
-
   <script src="https://code.jquery.com/jquery-3.5.1.js" type="text/javascript"></script>
   <script type="text/javascript">
       $(document).ready(function() {
           $('#example').DataTable({
               processing: true,
               ajax: {
-                  'url':'/listgroups/listGroups',
+                  'url':'/grouplist/ListGroups',
                   'type': 'GET'
               },
               columns: [

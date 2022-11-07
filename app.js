@@ -9,15 +9,7 @@ const schedule = require('node-schedule');
 
 const multer = require('multer');
  
-// For Multer Storage
-var multerStorage = multer.diskStorage({
-    destination: function (req, file, callback) {
-    callback(null, path.join(__dirname,'my_uploads'));
-    },
-    filename: function (req, file, callback) {
-    callback(null, Date.now() + '_' + file.originalname);
-    }
-});
+
 // const http = require('http');
 var session = require('express-session');
 var bodyParser = require('body-parser');
@@ -53,20 +45,15 @@ var userRouter = require('./routes/user');
 var eventRouter = require('./routes/event');
 var eventlistRouter = require('./routes/eventlist');
 var detaileventRouter = require('./routes/detailevent');
+var toyotaRouter = require('./routes/toyota');
 
 
 
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+
 var loginRouter = require('./routes/login');
-var listmessageRouter = require('./routes/listmessage');
-var listgroupsRouter = require('./routes/listgroups');
-var sendwaRouter = require('./routes/sendwa');
-var docapiRouter = require('./routes/docapi');
-// var sendEmailRouter = require('./routes/sendemail');
-var broadcastwaRouter = require('./routes/broadcastwa');
-// var repositoryRouter = require('./routes/repository');
+
 
 var app = express();
 // var sessionStore = new session.MemoryStore;
@@ -96,6 +83,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // Route CR-PROJECT
+app.use('/', loginRouter);
+app.use('/home', indexRouter);
+app.use('/login', loginRouter);
+app.use('/auth',loginRouter);
+app.use('/logout',loginRouter);
 app.use('/dashboard', dashboardRouter);
 app.use('/agent', agentRouter);
 app.use('/pm', pmRouter);
@@ -121,7 +113,7 @@ app.use('/user/edit-users', userRouter);
 app.use('/user/reset-password', userRouter);
 app.use('/user/logs', userRouter);
 app.use('/event', eventRouter);
-app.use('/event/add-event', eventRouter);
+app.use('/event/addevent', eventRouter);
 app.use('/listevent', eventlistRouter);
 app.use('/listevent/getdata', eventlistRouter);
 app.use('/listevent//deleteitem', eventlistRouter);
@@ -129,66 +121,8 @@ app.use('/listevent/delete-event', eventlistRouter);
 app.use('/detailevent', detaileventRouter);
 app.use('/detailevent/edit', detaileventRouter);
 app.use('/detailevent/update', detaileventRouter);
-
-// app.use('/eventdetail', detaileventRouter);
-
-// app.use('/detailevent/edit', detaileventRouter);
-// app.use('/listevent/:id', eventlistRouter);
-// app.use('/listevent/action', eventlistRouter);
-// app.use('/listevent/edit/:id', eventlistRouter);
-// app.use('/listevent/update/', eventlistRouter);
-// app.use('/evenlist', detaileventRouter);
-// app.use('/eventlist/edit/:id', detaileventRouter);
-// app.use('/listevent/EventList', eventlistRouter);
-
-
-
-
-app.use('/', loginRouter);
-// Route Home
-app.use('/home', indexRouter);
-// Route Users
-app.use('/users', usersRouter);
-app.use('/users/add-users', usersRouter);
-app.use('/users/data-users', usersRouter);
-app.use('/users/update-users', usersRouter);
-app.use('/users/delete-users', usersRouter);
-app.use('/users/email-users', usersRouter);
-app.use('/users/edit-users', usersRouter);
-app.use('/users/reset-password', usersRouter);
-app.use('/users/logs', usersRouter);
-// Route Login
-app.use('/login', loginRouter);
-app.use('/auth',loginRouter);
-app.use('/logout',loginRouter);
-// Route Doc Api
-app.use('/docs-api', docapiRouter);
-// Route List Message
-app.use('/message', listmessageRouter);
-app.use('/message/listMessage', listmessageRouter);
-// Route groups Wa
-app.use('/listgroups', listgroupsRouter);
-app.use('/listgroups/listGroups', listgroupsRouter);
-// Route Send Email
-// app.use('/email', sendEmailRouter);
-// app.use('/email/send-message', sendEmailRouter);
-// app.use('/email/api/reset-password-pmb/', sendEmailRouter);
-// app.use('/email/api/register-pmb/', sendEmailRouter);
-// app.use('/email/api/register-magister/', sendEmailRouter);
-// app.use('/email/api/register-icbaa/', sendEmailRouter);
-// app.use('/email/api/register-icbaa-abstract/', sendEmailRouter);
-// Route Send Wa
-app.use('/sendwa', sendwaRouter);
-app.use('/sendwa/send-message', sendwaRouter);
-app.use('/sendwa/listSender', sendwaRouter);
-app.use('/sendwa/version', sendwaRouter);
-app.use('/broadcast', broadcastwaRouter);
-app.use('/broadcast/send-broadcastwa', broadcastwaRouter);
-
-// Route repository
-// app.use('/repository', repositoryRouter);
-// app.use('/repository/list', repositoryRouter);
-
+app.use('/toyota', toyotaRouter);
+//End Project
 
 const logging = winston.createLogger({
   level: 'info',
@@ -529,6 +463,7 @@ app.post('/send-broadcastwa',[
   req.flash('success', 'Progress Send Whats Up');
   res.redirect('/broadcast');
 });
+
 
 // const importExcel = require('convert-excel-to-json');
 app.post('/send-broadcast-excel', (req, res) => {

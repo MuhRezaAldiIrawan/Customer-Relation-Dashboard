@@ -32,7 +32,7 @@
 
   <div class="d-flex justify-content-end mb-4">
     <div class="ml-md-auto py-2 py-md-0">
-       <button class="btn btn-primary btn-round" id="btnAdd" >
+       <button class="btn btn-primary btn-round" data-bs-toggle="modal" data-bs-target="#modalCenter" >
            <span class="tf-icons bx bx-user-plus"></span>&nbsp;
            Add Event
        </button>
@@ -50,7 +50,7 @@
     </div>
 </div>
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -60,13 +60,11 @@
         </button>
       </div>
       <div class="modal-body">
-          <form id="myForm" action="/event/add-event" method="POST" enctype="multipart/form-data">
+          <form action="/event/addevent" method="POST" enctype="multipart/form-data">
               <div class="form-group">
               <label for="exampleInputEmail1">Event Name</label>
-              <input type="hidden" name="id" >
               <input type="text" class="form-control" name="nama" placeholder="" required>
               </div>
-
               <div class="form-group">
                 <label for="exampleInputEmail1">Organizer</label>
                 <input type="text" class="form-control" name="organizer" placeholder="" required>
@@ -84,11 +82,14 @@
                 <label for="exampleInputEmail1">Place</label>
                 <input type="text" class="form-control" name="place" placeholder="" required>
               </div>
-
+              <div class="form-group">
+                <label for="exampleInputEmail1">Image</label>
+                <input type="file" class="form-control" name="image" placeholder="" required>
+              </div>
+              <div class="form-group">
+                  <button type="submit" id="btnSave" class="btn btn-primary">Save changes</button>
+              </div>
           </form>
-          <div class="form-group">
-              <button type="button" id="btnSave" class="btn btn-primary">Save changes</button>
-          </div>
       </div>
     </div>
   </div>
@@ -133,7 +134,7 @@
           });
     });
 </script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   $(document).ready(function() {
       $('#example').DataTable({
           processing: true,
@@ -291,7 +292,7 @@
   }
 
 
-</script>
+</script> -->
 <script>
   var date = new Date();
   var year = new date.getFullYear();

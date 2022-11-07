@@ -30,33 +30,6 @@
     </div>
   </div>
 
-  <!-- <div class="page-inner mt--5">
-    <div class="row mt--2">
-        <div class="col-md-12">
-            <div class="card full-height">
-                <div class="card-body">
-                    <div class="card-title">List Message</div>
-                    <div class="d-flex flex-wrap justify-content-around pb-2 pt-4">
-                        <table class="table" id="example">
-                            <thead>
-                              <tr>
-                                <th scope="col">No</th>
-                                <th scope="col">Sender</th>
-                                <th scope="col">Number</th>
-                                <th scope="col">Message</th>
-                                <th scope="col">Status</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                            </tbody>
-                          </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
   <div class="card">
     <h5 class="card-header">List Message</h5>
     <div class="table-responsive text-nowrap">
@@ -88,7 +61,7 @@
         $('#example').DataTable({
             processing: true,
             ajax: {
-                'url':'/message/listMessage',
+                'url':'/message/MessageList',
                 'type': 'GET'
             },
             columns: [
